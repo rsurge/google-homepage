@@ -1,31 +1,68 @@
 <html>
     <main>
+        <style>
+            .logo {
+                width: 40%;
+                height: 20%;
+                position: center;
+                top: 10px;
+                left: 10 px;
+                z-index: 1000;
+                }
+            #bottomnavbar {
+                background-color: rgb(216, 216, 216);
+                overflow: hidden;
+                position: fixed;
+                text-align: center;
+                display: block;
+                bottom: 0;
+                width: 100%;
+                }
+            #navright {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+            a {
+                color: rgb(54, 54, 54);
+                }
+            #googlesearch {
+                text-align: center;
+                display: block;
+                }   
+        </style>
         <head>
 
         </head>
         <body>
             <nav>
+                <div id="navleft">
                 <a href="">About</a>
                 <a href="">Store</a>
+                </div>
+                <div id="navright">
                 <a href="">Gmail</a>
                 <a href="">Images</a>
+                </div>
             </nav>
-            <div>
-                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png">
+            <div id="googlesearch">
+                <div id="googlelogo">
+                    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png">
+                </div>
+                <div id="search">
+                    <input type="text">
+                    <button type="button">Google Search</button>
+                    <button type="button">I'm Feeling Lucky</button>
+                </div>
             </div>
-            <div>
-                <input type="text">
-                <button type="button">Google Search</button>
-                <button type="button">I'm Feeling Lucky</button>
-            </div>
-            <footer>
+            <div id="bottomnavbar">
                 <a href="">Advertising</a>
                 <a href="">Business</a>
-                <a href="">How Search works</a>
+                <a href="">How Search Works</a>
                 <a href="">Privacy</a>
                 <a href="">Terms</a>
                 <a href="">Settings</a>
-            </footer>
+            </div>
         </body>
     </main>
 </html>
